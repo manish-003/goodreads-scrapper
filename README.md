@@ -11,6 +11,11 @@ Python Script to fetch book information from goodreads and make a post
 - adds star emoji to post according to rating
 - downloads and saves cover images of book
 
+### for this to work you will need
+ - lxml parser
+ - beautiful soup
+ - requests library
+ 
 --------------------------------------------
 #### pull requests accepted!!
 
