@@ -2,7 +2,7 @@
 
 Python Script to fetch book information from goodreads and make a post
 
-## any keywords must work and spelling mistakes are ignored as it uses gr's search querry for searching books
+##### any keywords must work and spelling mistakes are ignored as it uses gr's search querry for searching books
 
 ### This script:
 - gets title book
@@ -11,6 +11,7 @@ Python Script to fetch book information from goodreads and make a post
 - adds star emoji to post according to rating
 - downloads and saves cover images of book
 
+--------------------------------------------
 #### pull requests accepted!!
 
 what else do you want this script to do ?? (pull request to readme file add suggestions below)
