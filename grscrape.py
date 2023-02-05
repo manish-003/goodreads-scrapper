@@ -18,7 +18,7 @@ def getpost(bookurl):
     soup= BeautifulSoup(bookpage, 'lxml')
     title= soup.find('h1', attrs={'data-testid': 'bookTitle'}).text
     authors= ", ".join([i.text for i in soup.find('div', class_='BookPageMetadataSection__contributor').find_all('span',class_='ContributorLink__name')])
-    imgsrc = soup.find('img',class_='ResponsiveImage').get('src')
+    imgsrc = soup.find('img',class_='ResponsiveImage').get('src') #comment following 4 lines to not download image
     image= requests.get(imgsrc).content
     with open(f'{foldername}/{title}.png','wb+') as f:
         f.write(image)
@@ -30,7 +30,7 @@ def getpost(bookurl):
     f"""
     {title}
     {authors}
-    {stars} {rating}
+    {stars} ({rating}/5)
 
     {desc}
     """
