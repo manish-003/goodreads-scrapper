@@ -2,10 +2,6 @@ import requests
 import os
 from bs4 import BeautifulSoup
 
-foldername='bookimgs'
-if not (os.path.exists(f'./{foldername}')):
-    os.mkdir(f'{foldername}')
-
 def geturl(bname):
      searchurl=f"https://www.goodreads.com/search?q={bname}"
      searchpage= requests.get(searchurl).content
@@ -37,6 +33,9 @@ def getpost(bookurl):
     return post
 
 if __name__ =='__main__':
+    foldername='bookimgs'
+    if not (os.path.exists(f'./{foldername}')):
+        os.mkdir(f'{foldername}')
     book = input("enter a book name to search:")
     bookurl = geturl(book)
     print(getpost(bookurl))
