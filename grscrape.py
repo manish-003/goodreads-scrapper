@@ -36,7 +36,7 @@ def getpost(bookurl):
     """
     return post
 
-
-book = input("enter a book name to search: ")
-bookurl = geturl(book)
-print(getpost(bookurl))
+if __name__ =='__main__':
+    book = input("enter a book name to search:")
+    bookurl = geturl(book)
+    print(getpost(bookurl))
