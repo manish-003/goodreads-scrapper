@@ -15,6 +15,8 @@ Python Script to fetch book information from goodreads and make a post
  - lxml parser
  - beautiful soup
  - requests library
+
+### this script is implemented as telegram bot checkout https://t.me/BookferenceBot
  
 --------------------------------------------
 #### pull requests accepted!!
